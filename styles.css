@@ -1,0 +1,29 @@
+@font-face {
+    font-family: square;
+    src: url(./Fonts/Moby-Monospace.ttf);
+}
+
+body {
+    background-color: #222;
+    color: #e30c00;
+}
+
+button {
+    background-color: #6C809A;
+}
+
+input {
+    width: 4em;
+}
+
+.labelRow {
+    width: 6em;
+}
+
+.matrixDisp {
+    font-weight: 500;
+    font-family: square;
+    line-height: 1em;
+    letter-spacing 0;
+    
+}

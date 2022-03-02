@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="./MatrixGenerator.js"></script>
+    
+    <title>Minesweeper</title>
+</head>
+<body>
+    <h1>Site</h1>
+    <h3>This is some code I wrote to basically make minesweeper.</h3>
+    
+    <h4>Type in the values you want below.</h4>
+    
+    <table id="userIn">
+        <tr title="Enter your desired width">
+            <td class="labelRow"><label for="widthIn">Width:</label></td>
+            <td><input type="number" id="widthIn" placeholder="Width"></td>
+        </tr>
+        <tr title="Enter your desired height">
+            <td class="labelRow"><label for="heightIn">Height:</label></td>
+            <td><input type="number" id="heightIn" placeholder="Height"></td>
+        </tr>
+        <tr title="Enter your desired bomb count">
+            <td class="labelRow"><label for="bombCountIn">Bomb Count:</label></td>
+            <td><input type="number" id="bombCountIn" placeholder="Bombs"></td>
+            <td title="Create game"><button onclick="doIt()">Start</button></td>
+        </tr>
+    </table>
+    
+    <p id="gameProperties"></p>
+    
+    <p>Here is the generated matrix:</p>
+    
+    <p class="matrixDisp" id="bombField"></p>
+    
+    <p>Here is the corrisponding number field:</p>
+    
+    <p class="matrixDisp" id="numberField"></p>
+    
+    <p>This is the corrisponding hidden Game field:</p>
+    
+    <p class="matrixDisp" id="gameField"></p>
+    
+    <script>doIt()</script>
+</body>
